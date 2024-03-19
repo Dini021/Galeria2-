@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Animes e Vídeos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Galeria de Animes e Vídeos</h2>
+
+<table>
+    <tr>
+        <th>Imagens</th>
+        <th colspan="2">Vídeos</th>
+    </tr>
+    <tr>
+        <td><img src="sator.png" onclick="openExpanded(this.src)"></td>
+        <td><iframe width="300" height="169" src="https://www.youtube.com/watch?v=RVG0qs7eMNE" frameborder="0" allowfullscreen></iframe></td>
+        <td><iframe width="300" height="169" src="" frameborder="0" allowfullscreen></iframe></td>
+    </tr>
+    <tr>
+        <td><img src="ichig.webp" onclick="openExpanded(this.src)"></td>
+        <td><iframe width="300" height="169" src="https://www.youtube.com/watch?v=vrBjtC3blsA" frameborder="0" allowfullscreen></iframe></td>
+        <td><iframe width="300" height="169" src="" frameborder="0" allowfullscreen></iframe></td>
+    </tr>
+    <tr>
+        <td><img src="gg.webp" onclick="openExpanded(this.src)"></td>
+        <td><iframe width="300" height="169" src="https://www.youtube.com/watch?v=Sb-Frxpizxk" frameborder="0" allowfullscreen></iframe></td>
+        <td><iframe width="300" height="169" src="" frameborder="0" allowfullscreen></iframe></td>
+    </tr>
+</table>
+
+<script>
+    function openExpanded(src) {
+        window.open(src, '_blank');
+    }
+</script>
+
+</body>
+</html>
+
+
+
